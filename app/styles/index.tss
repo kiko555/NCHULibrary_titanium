@@ -1,0 +1,48 @@
+"#drawer": {
+    openDrawerGestureMode: "OPEN_MODE_ALL",
+    closeDrawerGestureMode: "CLOSE_MODE_MARGIN",
+    title: "中興大學圖書館-NCHU LIBRARY",
+//    fullscreen:true,//是否全屏   
+//    navBarHidden: "true",//是否显示actionbar  
+//    ExitOnClose: "true",
+	leftDrawerWidth: "220dp",
+	rightDrawerWidth: "220dp",
+    fading: 1,
+    parallaxAmount: 1,
+    showShadow: "true",
+    shadowWidth: "50dp",
+    animationMode: "ANIMATION_ZOOM",
+    orientationModes: [Ti.UI.PORTRAIT]	//鎖定螢幕不能旋轉
+}
+
+// "Window": {
+    // backgroundColor: 'white',
+// }
+
+"#main_header_title": {
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	// width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	color: "#333",
+	font: {fontWeight: "bold"}//,
+	// shadowColor: '#aaa',
+	// shadowOffset: {x:5, y:5}
+	// shadowRadius: 3
+}
+
+"#main_page": {
+	backgroundColor: "#FFEECD",
+}
+
+"#left_menu": {
+	backgroundColor: "#24245A"
+}
+
+"#right_menu": {
+	backgroundColor: "#24245A"
+}
+
+
+".side_menu":{
+	backgroundColor: "#24245A"
+}

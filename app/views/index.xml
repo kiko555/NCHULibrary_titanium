@@ -1,0 +1,34 @@
+<Alloy>
+    <Widget id="drawer" src="nl.fokkezb.drawer">
+    	
+        <Window module="xp.ui" role="leftWindow" class="side_menu">
+			<View id="left_menu" layout="vertical"></View>
+        </Window>
+
+        <View role="centerWindow" layout="vertical">
+        	<View layout="horizontal" backgroundColor="#BBB" height="7%" >
+        		<View width="15%" height="Ti.UI.FILL"><ImageView image="/images/icons/ic_action_view_as_grid.png" height="Ti.UI.FILL" left="0" onClick="toggleLeftWindow" /></View>
+        		<View width="70%" height="Ti.UI.FILL"><Label id="main_header_title"></Label></View>
+            	<View width="15%" height="Ti.UI.FILL"><ImageView image="/images/icons/ic_action_settings.png" height="Ti.UI.FILL" right="0" onClick="toggleRightWindow" /></View>
+        	</View>
+        	<Label backgroundColor="#777" top="0" bottom="0" width="100%" height="1" />
+        	<View id="main_page" layout="vertical"></View>
+        </View>
+
+        <Window module="xp.ui" role="rightWindow" class="side_menu">
+        	<View id="right_menu" layout="vertical"></View>
+        </Window>
+        
+        <!-- <NavigationWindow platform="ios" role="centerWindow">
+            <Window>
+                <LeftNavButton>
+                    <Button onClick="toggle">Left</Button>
+                </LeftNavButton>
+                <Label>I am center</Label>
+                <RightNavButton>
+                    <Button onClick="toggle">Right</Button>
+                </RightNavButton>
+            </Window>
+        </NavigationWindow> -->
+    </Widget>
+</Alloy>

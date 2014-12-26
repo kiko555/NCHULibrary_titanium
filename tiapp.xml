@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>tw.edu.nchu.libapp</id>
+    <name>中興大學圖書館</name>
+    <!--<name>NCHU LIBRARY</name>-->
+    <version>2.2.13</version>
+    <publisher>NCHU LIBRARY</publisher>
+    <url>http://www.lib.nchu.edu.tw</url>
+    <description/>
+    <copyright>2014 by NCHU LIBRARY</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <analytics>false</analytics>
+    <guid>4b20d786-2594-4971-84e7-432dcfc0a47c</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <property name="ti.android.bug2373.finishfalseroot" type="bool">true</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <!--<android xmlns:android="http://schemas.android.com/apk/res/android"/>-->
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- versionCode 是google play升級時看的版本 -->
+        <!-- versionName 是使用者安裝時看到的版本，這個版本要跟本檔案最前方的<version>2.1.11</version>設成一樣，以免日後版本訊息混肴。 -->
+        <manifest android:versionCode="2213" android:versionName="2.2.13"/>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="android">dk.napp.drawer</module>
+        <module platform="android">com.mirasense.scanditsdk</module>
+        <module platform="android">ti.urbanairship</module>
+    </modules>
+    <deployment-targets>
+        <target device="iphone">false</target>
+        <target device="ipad">false</target>
+        <target device="android">true</target>
+    </deployment-targets>
+    <sdk-version>3.4.1.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+</ti:app>
